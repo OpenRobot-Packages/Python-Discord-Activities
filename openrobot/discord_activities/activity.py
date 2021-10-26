@@ -16,7 +16,7 @@ class DiscordActivity:
 
     async def _request(self, method: str, url: str, **kwargs) -> typing.Union[typing.Dict[str, typing.Any], str]:
         headers = {
-            'Authorization': self.bot_token,
+            'Authorization': 'Bot ' + self.bot_token,
             'Content-Type': 'application/json'
         }
         
@@ -45,6 +45,7 @@ class DiscordActivity:
             'max_uses': max_uses,
             'temporary': temporary,
             'unique': unique,
+            'target_type': 2,
             'target_application_id': app_id
         }, separators=(',', ':'), ensure_ascii=True))
 
