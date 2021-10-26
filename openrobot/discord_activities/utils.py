@@ -14,7 +14,7 @@ async def json_or_text(response: aiohttp.ClientResponse) -> Union[Dict[str, Any]
 
     return text
 
-def try_int(self, obj: Any) -> typing.Union[int, Any]:
+def try_int(obj: Any) -> typing.Union[int, Any]:
     try:
         return int(obj)
     except:
