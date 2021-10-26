@@ -14,9 +14,15 @@ class DiscordActivity:
         self._tries = 5
 
     async def _request(self, method: str, url: str, **kwargs) -> typing.Union[typing.Dict[str, typing.Any], str]:
+        headers = {
+            'Authorization': self.bot_token
+        }
+        
+        headers.update(kwargs.pop('headers', {}))
+
         async with aiohttp.ClientSession() as sess:
             for tries in range(self._tries):
-                async with sess.request(method, url, **kwargs) as resp:
+                async with sess.request(method, url, headers=headers, **kwargs) as resp:
                     data = await json_or_text(resp)
 
                     if 300 > resp.status >= 200:
