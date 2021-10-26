@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "OpenRobot-Discord-Acitivites"
+version = "0.0.1"
+description = "A package to support Discord Activities such as Watch Together."
+authors = ["OpenRobot <openrobot@openrobot.xyz>", "proguy914629 <proguy914629@openrobot.xyz>"]
+license = "MIT"
+packages = [
+    { include = "openrobot" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.5"
+"OpenRobot-Packages" = { git = "https://github.com/OpenRobot-Packages/Python-OpenRobot-Packages.git", branch = "main" }
+"aiohttp" = ">=3.7.4"
+"requests" = ">=2.25.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
