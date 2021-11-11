@@ -2,8 +2,10 @@
 
 A package to support Discord Activities such as Watch Together.
 
+<!-- 
 # Examples:
 Examples can be found in the `examples` directory.
+-->
 
 # How to install:
 ```sh
