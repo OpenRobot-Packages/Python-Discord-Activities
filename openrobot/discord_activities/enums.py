@@ -12,6 +12,7 @@ class ActivityType(Enum):
     word_snacks = 879863976006127627
     letter_tile = 879863686565621790
     spellcast = 852509694341283871
+    checkers_in_the_park = 832013003968348200
 
     def application_id(self) -> int:
         return self.value
