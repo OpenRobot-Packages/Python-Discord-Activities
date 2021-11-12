@@ -1,5 +1,5 @@
 import discord # pip install discord.py
-from openrobot.discord_activities import DiscordActivity, ActivityType # pip install git+https://github.com/OpenRobot/Python-Discord-Activities
+from openrobot.discord_activities import DiscordActivity, ActivityType # pip install git+https://github.com/OpenRobot-Packages/Python-Discord-Activities
 
 activity = DiscordActivity('<Insert Bot Token>')
 
