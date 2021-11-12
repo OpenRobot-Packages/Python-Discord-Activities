@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "OpenRobot-Discord-Acitivites"
-version = "0.0.1"
+version = "0.1.0"
 description = "A package to support Discord Activities such as Watch Together."
 authors = ["OpenRobot <openrobot@openrobot.xyz>", "proguy914629 <proguy914629@openrobot.xyz>"]
 license = "MIT"
