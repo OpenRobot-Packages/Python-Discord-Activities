@@ -41,7 +41,7 @@ class DiscordActivity:
         app_id = activity_type.application_id()
 
         js = await self._request('POST', f'https://discord.com/api/v9/channels/{channel_id}/invites', data=json.dumps({
-            'max_age': max_age or 0,
+            'max_age': max_age.total_seconds() if isinstance(max_age, datetime.timedelta) else max_age if max_age else 0,
             'max_uses': max_uses,
             'temporary': temporary,
             'unique': unique,

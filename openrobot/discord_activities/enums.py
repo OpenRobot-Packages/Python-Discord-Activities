@@ -12,7 +12,7 @@ class ActivityType(Enum):
     word_snacks = 879863976006127627
     letter_tile = 879863686565621790
     spellcast = 852509694341283871
-    checkers_in_the_park = 832013003968348200
+    checkers = 832013003968348200
     fishington = 814288819477020702
     betrayal = 773336526917861400
 
