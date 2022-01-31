@@ -8,13 +8,14 @@ class ActivityType(Enum):
     watch_together = 880218394199220334
     poker_night = 755827207812677713
     chess = 832012774040141894
-    doodle_crew = 878067389634314250
+    sketch_heads = 878067389634314250
     word_snacks = 879863976006127627
-    letter_tile = 879863686565621790
+    letter_leauge = 879863686565621790
     spellcast = 852509694341283871
     checkers = 832013003968348200
     fishington = 814288819477020702
     betrayal = 773336526917861400
+    ocho = 832025144389533716
 
     def application_id(self) -> int:
         return self.value
